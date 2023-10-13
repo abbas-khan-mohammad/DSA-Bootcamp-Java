@@ -1,5 +1,4 @@
 package LECTURES.Arrays;
-import java.util.*;
 public class LargestInArray {
     public static int largestInArray(int arr[]){
         int largest = Integer.MIN_VALUE;
