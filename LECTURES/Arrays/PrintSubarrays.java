@@ -13,7 +13,7 @@ public class PrintSubarrays {
                 totalSubarrays++;
                 System.out.println();
             }System.out.println();
-        }System.out.println("total sub arrays"+totalSubarrays);
+        }System.out.println("Total Subarrays = "+totalSubarrays);
     }
     public static void main(String[] args) {
         int arr[] = {2,4,6,8,10};
