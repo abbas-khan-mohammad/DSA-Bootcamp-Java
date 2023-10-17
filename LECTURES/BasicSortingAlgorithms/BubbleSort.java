@@ -22,6 +22,5 @@ public class BubbleSort {
         int arr[] = {1000,5,1,3,2};
         bubbleSort(arr);
         printArr(arr);
-        printArr(arr);
     }
 }
