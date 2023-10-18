@@ -1,18 +1,24 @@
 package LECTURES.Arrays;
 
 public class MaxSubarraySum3 {
-    public static void maxSubarraySum3(int arr[]){
+    public static int maxSubarraySum3(int nums[]){
         int maxSum = Integer.MIN_VALUE;
         int currSum = 0;
-        for(int i=0; i<arr.length; i++){
-            currSum += arr[i];
+        if(nums.length==1){
+            maxSum=nums[0];
+            return maxSum;
+        }
+ 
+        for(int i=0; i<nums.length; i++){
+            currSum += nums[i];
+            maxSum = Math.max(maxSum, currSum);
             if(currSum < 0){
             currSum = 0;
-        }maxSum = Math.max(maxSum, currSum);
-    }System.out.println("Max Subarray Sum = "+maxSum);
+        }
+    }return maxSum;
 }
     public static void main(String[] args) {
-        int arr[] = {-2,-3,4,-1,-2,1,5,-3};
-        maxSubarraySum3(arr);
+        int nums[] = {-2,-3,4,-1,-2,1,5,-3};
+        System.out.println(maxSubarraySum3(nums));
     }
 }
