@@ -42,4 +42,4 @@ public class CountingSort {
         countingSort(arr, min, max);
         printArr(arr);
     }
-}
+}// 1,2,3,4,5,6,7,8,9
